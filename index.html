@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8" >
+				<!-- User name input -->
+				<h1 id="RPS">Firebase Rock Paper Scissors</h1>
+				<br><br><br>		
+				<div id="greetings"></div>
+				<br><br>
+				<div id="whose-turn"></div>
+				<!--<form>
+				<input type="text" id="name-input">
+				<input type="submit" id="submit-name">
+				</form> -->
+			<div class="col-lg-2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<br><br><br>		
+
+		<div class="row">
+			<!-- <div class="col-lg-1"></div> -->
+			
+			<div class="col-lg-4" id="player-1">
+				<!-- Player 1 choices -->
+				
+					<p id="player1-name"></p>
+
+					<hr>
+
+					<div id ="waiting1"></div>
+
+					<div id="player1choices">
+					<!-- choices -->
+						<button class="choice1" id="rock1" value="rock"></button><br><br>
+						<button class="choice1" id="paper1" value="paper"></button><br><br>
+						<button class="choice1" id="scissors1" value="scissors"></button>
+					</div>
+					<div id="group1message"></div>
+				<hr>
+				<p id="score1">
+					<span id="win1"></span>
+					<span id="lose1"></span>
+				</p>		
+
+			</div>
+
+			<div class="col-lg-0.5"></div>
+
+			<div class="col-lg-3" id="score">
+				<!-- Winner dispaly -->	
+					<p id="winner"></p>
+			</div>
+
+			<div class="col-lg-0.5"></div>
+
+			<div class="col-lg-4" id="player-2">
+				<!-- Player 2 choices -->
+
+						<p id="player2-name"></p>
+						<hr>
+						<div id ="waiting2"></div>
+
+						<div id="player2choices">
+						<!-- choices -->
+							<button class="choice2" id="rock2" value="rock"></button><br><br>
+							<button class="choice2" id="paper2" value="paper"></button><br><br>
+							<button class="choice2" id="scissors2" value="scissors"></button>
+						</div>
+						<div id="group2message"></div>	
+					<hr>
+					<p id="score2">
+						<span id="win2"></span>
+						<span id="lose2"></span>
+					</p>
+		
+			</div>
+
+			<!-- <div class="col-lg-1"></div> -->
+	
+		</div><!-- row  -->
+	</div><!-- container  -->
+
+	<div class="container">
+		<br><br><br>		
+		<div class="row">
+
+			<div class="col-lg-2"></div>
+
+			<div class="col-lg-8">
+				<br><br><br>			
+				<div class="row">
+					<!-- display chats -->
+					<div class="col-lg-12" id="chat-window"></div>
+				</div>
+				<!-- chat intake -->
+				<br><br><br>
+				<div class="row">
+					<div class="col-lg-12">
+						<form>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                <p>Chat with your opponent!</p>
+                            </div>
+                        </div>
+						<input type="text" id="chat-input">
+						<br><br>
+						<input type="submit" id="submit-chat" value="SEND"/>
+						</form>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-lg-2"></div>
+		</div>
+	</div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+
+    <!-- Main js file / logic -->
+    <script src="assets/javascript/logic.js"></script>
+</body>
+
+</html>
